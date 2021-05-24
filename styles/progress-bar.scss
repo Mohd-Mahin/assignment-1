@@ -1,0 +1,35 @@
+.progress-bar-wrapper {
+  max-width: 1000;
+  width: 75%;
+  background-color: #8ed0d8;
+  height: 8px;
+  border-radius: 4px;
+  position: relative;
+  margin: auto;
+
+  .progress-bar {
+    background-color: #00738b;
+    position: absolute;
+    left: 0;
+    height: 100%;
+    border-radius: inherit;
+    width: 0;
+    transition: width 1s;
+  }
+  @media screen and (max-width: 768px) {
+    width: 90%;
+  }
+}
+
+.progress-label {
+  text-align: center;
+  color: #1ea2b1;
+  margin-top: 10px;
+  font-size: 18px;
+  font-weight: bold;
+
+  @media screen and (max-width: 768px) {
+    color: #fff;
+    font-size: 22px;
+  }
+}
